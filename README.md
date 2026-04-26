@@ -1,15 +1,18 @@
 Bike Sharing Interactive Dashboard
 
 *Deskripsi*
+
 Dashboard interaktif ini dibuat untuk menganalisis pola penggunaan sepeda berdasarkan dataset Bike Sharing. Dashboard ini dikembangkan untuk menjawab beberapa pertanyaan bisnis terkait faktor yang memengaruhi jumlah penyewaan sepeda serta perilaku pengguna.
 
 *Tujuan Analisis*
+
 Dashboard ini bertujuan untuk menjawab pertanyaan berikut:
 1. Faktor apa saja yang memengaruhi rendahnya jumlah penyewaan sepeda pada hari kerja selama musim panas tahun 2012?
 2. Pada kondisi apa proporsi pengguna casual melebihi 40% dari total penyewaan selama kuartal 2 tahun 2012?
 3. Bagaimana perbedaan pola penyewaan antara pengguna casual dan registered berdasarkan jam penggunaan?
 
 *Fitur Dashboard*
+
 Filter interaktif berdasarkan:
   - Tahun
   - Musim (Season)
