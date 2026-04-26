@@ -1,49 +1,48 @@
-Bike Sharing Interactive Dashboard
+## Bike Sharing Interactive Dashboard
+Dashboard interaktif untuk menganalisis pola penggunaan sepeda berdasarkan dataset Bike Sharing.
 
-*Deskripsi*
+## Dashboard Preview
+https://bike-dashboard-psduscudbx5mn7oocnvxoy.streamlit.app/
 
-Dashboard interaktif ini dibuat untuk menganalisis pola penggunaan sepeda berdasarkan dataset Bike Sharing. Dashboard ini dikembangkan untuk menjawab beberapa pertanyaan bisnis terkait faktor yang memengaruhi jumlah penyewaan sepeda serta perilaku pengguna.
+## Project Structure
+submission
+├── app.py
+├── day.csv
+├── hour.csv
+├── notebook_submission_2.ipynb
+├── requirements.txt
+├── url.txt
+└── README.md
 
-*Tujuan Analisis*
+## Business Questions
 
-Dashboard ini bertujuan untuk menjawab pertanyaan berikut:
-1. Faktor apa saja yang memengaruhi rendahnya jumlah penyewaan sepeda pada hari kerja selama musim panas tahun 2012?
-2. Pada kondisi apa proporsi pengguna casual melebihi 40% dari total penyewaan selama kuartal 2 tahun 2012?
-3. Bagaimana perbedaan pola penyewaan antara pengguna casual dan registered berdasarkan jam penggunaan?
+1. Faktor apa yang memengaruhi rendahnya penyewaan sepeda pada hari kerja di musim panas tahun 2012?
+2. Kapan proporsi casual user melebihi 40% dari total penyewaan?
+3. Bagaimana perbedaan pola penggunaan antara casual dan registered users berdasarkan jam?
 
-*Fitur Dashboard*
+## Setup Environment - Shell / Terminal
+pip install -r requirements.txt
 
-Filter interaktif berdasarkan:
-  - Tahun
-  - Musim (Season)
-  - Kondisi cuaca (Weather)
-- Visualisasi tren penyewaan sepeda
-- Analisis demand rendah (Low Demand)
+## Run Streamlit App
+streamlit run app.py
+
+## Features
+- Filter interaktif (tahun, musim, cuaca)
+- Analisis demand rendah
 - Analisis proporsi casual user
-- Perbandingan pola penggunaan antara casual dan registered users
-- Analisis pola penggunaan per jam (hourly analysis)
+- Perbandingan casual vs registered
+- Analisis pola per jam (hourly)
 - Tabel data harian dan per jam
 
-*Dataset yang digunakan:*
-- day.csv → data agregasi harian
-- hour.csv→ data agregasi per jam
+## Key Insights
+- Penyewaan sepeda dipengaruhi oleh musim dan kondisi cuaca
+- Casual users lebih aktif pada waktu tertentu (non-working hours)
+- Registered users memiliki pola penggunaan yang lebih stabil
+- Terdapat pola peak hour dalam penggunaan sepeda
 
-*Teknologi yang Digunakan*
+## Tech Stack
 - Python
 - Streamlit
 - Pandas
 - Plotly
 
-*Cara Menjalankan Dashboard Secara Lokal*
-1. Install dependencies: pip install -r requirements.txt
-2. Jalankanaplikasi: streamlit run app.py
-
-*Dashboard Online* : https://bike-dashboard-psduscudbx5mn7oocnvxoy.streamlit.app/
-
-*Insight Utama*
-- Jumlah penyewaan sepeda dipengaruhi oleh kondisi cuaca, musim, dan hari kerja
-- Casual users cenderung aktif pada waktu tertentu (non-working hours)
-- Registered users menunjukkan pola penggunaan yang lebih stabil dan rutin
-- Aktivitas penyewaan memiliki pola jam tertentu (peak hour)
-
-Dashboard ini tidak hanya menampilkan visualisasi, tetapi juga menyediakan insight berbasis data untuk membantu memahami pola penggunaan sepeda secara lebih mendalam.
