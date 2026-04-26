@@ -45,4 +45,5 @@ Filter interaktif berdasarkan:
 - Casual users cenderung aktif pada waktu tertentu (non-working hours)
 - Registered users menunjukkan pola penggunaan yang lebih stabil dan rutin
 - Aktivitas penyewaan memiliki pola jam tertentu (peak hour)
+- 
 Dashboard ini tidak hanya menampilkan visualisasi, tetapi juga menyediakan insight berbasis data untuk membantu memahami pola penggunaan sepeda secara lebih mendalam.
