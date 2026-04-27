@@ -1,9 +1,9 @@
 ## Bike Sharing Interactive Dashboard
-Dashboard interaktif untuk menganalisis pola penggunaan sepeda berdasarkan dataset Bike Sharing.
+Dashboard interaktif untuk menganalisis pola penggunaan sepeda berdasarkan dataset Bike Sharing. Project ini telah diperbarui berdasarkan hasil revisi, khususnya pada bagian Exploratory Data Analysis (EDA) dan Visualization. Perbaikan dilakukan dengan menambahkan analisis yang lebih lengkap, penggunaan agregasi data, serta penyesuaian visualisasi agar lebih sesuai dengan pertanyaan bisnis. Dashboard interaktif juga telah diperbarui untuk mencerminkan hasil analisis terbaru.
 
 
 ## Dashboard Preview
-https://bike-dashboard-psduscudbx5mn7oocnvxoy.streamlit.app/
+https://bike-dashboard-rachelbela38.streamlit.app/
 
 
 ## Business Questions
@@ -29,11 +29,10 @@ streamlit run app.py
 - Tabel data harian dan per jam
 
 
-## Key Insights
-- Penyewaan sepeda dipengaruhi oleh musim dan kondisi cuaca
-- Casual users lebih aktif pada waktu tertentu (non-working hours)
-- Registered users memiliki pola penggunaan yang lebih stabil
-- Terdapat pola peak hour dalam penggunaan sepeda
+## Key Insight
+- Faktor cuaca dan suhu secara bersama-sama memengaruhi rendahnya demand
+- Pengguna casual lebih dominan pada waktu santai dan kondisi rekreasi
+- Perbedaan utama antara casual dan registered terletak pada volume penggunaan, bukan pola waktu
 
 
 ## Tech Stack
