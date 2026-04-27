@@ -36,8 +36,9 @@ streamlit run app.py
 
 
 ## Tech Stack
-- Python
-- Streamlit
-- Pandas
-- Plotly
+- Python 
+- Pandas 
+- Seaborn & Matplotlib 
+- Plotly 
+- Streamlit 
 
