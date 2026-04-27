@@ -158,9 +158,10 @@ with tab1:
     best_season = filtered_day.groupby("season_label")["cnt"].mean().idxmax()
 
     st.info(
-        f"Key insight: peak hour terjadi sekitar jam {peak_hour}:00. "
-        f"Season dengan rata-rata rental tertinggi adalah {best_season}, "
-        f"dan cuaca terbaik adalah {best_weather}."
+    f"Berdasarkan hasil analisis, puncak penyewaan terjadi sekitar jam {peak_hour}:00, "
+    f"yang menunjukkan adanya pola penggunaan pada waktu tertentu. "
+    f"Season {best_season} dan kondisi cuaca {best_weather} memiliki rata-rata penyewaan tertinggi, "
+    f"yang mengindikasikan bahwa faktor lingkungan berpengaruh terhadap tingkat penggunaan sepeda."
     )
 
 # =========================
@@ -232,8 +233,10 @@ with tab2:
     dominant_weather = low_demand["weather_label"].mode()[0]
 
     st.warning(
-        f"Key insight: pada hari kerja Summer 2012, low demand paling sering terjadi "
-        f"pada kondisi cuaca {dominant_weather}. Faktor cuaca dan suhu terlihat memengaruhi rendahnya jumlah rental."
+    f"Berdasarkan hasil analisis, pada hari kerja di musim panas 2012, kondisi low demand "
+    f"paling sering terjadi pada cuaca {dominant_weather}. Selain itu, suhu yang tinggi juga "
+    f"berkorelasi dengan penurunan jumlah penyewaan. Hal ini menunjukkan bahwa rendahnya demand "
+    f"dipengaruhi oleh kombinasi faktor cuaca dan suhu yang memengaruhi kenyamanan pengguna."
     )
 
 # =========================
@@ -312,8 +315,10 @@ with tab3:
     top_weather = high_casual["weather_label"].mode()[0]
 
     st.info(
-        f"Key insight: casual ratio di atas {threshold_ratio:.0%} paling sering terjadi "
-        f"pada jam {top_hour}:00, hari {top_day}, dengan cuaca {top_weather}."
+    f"Berdasarkan hasil analisis, proporsi casual di atas {threshold_ratio:.0%} paling sering terjadi "
+    f"pada jam {top_hour}:00, hari {top_day}, dengan kondisi cuaca {top_weather}. "
+    f"Hal ini menunjukkan bahwa pengguna casual lebih dominan pada waktu santai, "
+    f"hari non-working, serta kondisi cuaca yang mendukung aktivitas rekreasi."
     )
 
 # =========================
@@ -350,9 +355,11 @@ with tab4:
     registered_peak = hourly_pattern.loc[hourly_pattern["registered"].idxmax(), "hr"]
 
     st.success(
-        f"Key insight: casual user mencapai puncak pada jam {casual_peak}:00, "
-        f"sedangkan registered user mencapai puncak pada jam {registered_peak}:00. "
-        f"Ini menunjukkan registered user cenderung punya pola penggunaan rutin."
+    f"Berdasarkan hasil analisis, pengguna casual mencapai puncak pada jam {casual_peak}:00, "
+    f"sedangkan pengguna registered mencapai puncak pada jam {registered_peak}:00. "
+    f"Pengguna registered menunjukkan pola penggunaan yang lebih terstruktur pada jam kerja, "
+    f"sementara pengguna casual lebih fleksibel sepanjang hari. "
+    f"Perbedaan utama antara keduanya terletak pada volume penggunaan, bukan pada pola waktu penggunaan."
     )
 
     st.dataframe(hourly_pattern, use_container_width=True)
@@ -364,7 +371,8 @@ with tab5:
     st.subheader("🧩 Analisis Lanjutan: Usage Category")
 
     st.write(
-        "Kategori ini dibuat dari jumlah rental harian menjadi Low Usage, Medium Usage, dan High Usage."
+    "Kategori ini dibuat berdasarkan jumlah penyewaan harian dengan membagi data menjadi Low, Medium, dan High Usage. "
+    "Pendekatan ini membantu menyederhanakan analisis serta mendukung hasil EDA sebelumnya dalam memahami pola permintaan sepeda."
     )
 
     col_a, col_b = st.columns(2)
